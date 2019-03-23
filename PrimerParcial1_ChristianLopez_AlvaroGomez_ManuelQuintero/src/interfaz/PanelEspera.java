@@ -10,36 +10,6 @@ public class PanelEspera extends JPanel{
 	private JPanel panelConectados;
 	private int numConectados;
 	
-	
-	
-	public static void main(String[] args) throws InterruptedException {
-		JFrame x = new JFrame();
-		PanelEspera n = new PanelEspera();
-		x.add(n);
-		x.setVisible(true);
-		n.setVisible(true);
-		n.conectarCliente("Manuel");
-		x.pack();
-		Thread.sleep(3000);
-		n.conectarCliente("Alvaro");
-		x.pack();
-		Thread.sleep(3000);
-		n.conectarCliente("Christian");
-		x.pack();
-		Thread.sleep(3000);
-		n.conectarCliente("Urcuqui");
-		x.pack();
-		Thread.sleep(3000);
-		n.conectarCliente("Julio");
-		x.pack();
-		Thread.sleep(3000);
-		n.conectarCliente("X");
-		x.pack();
-		Thread.sleep(3000);
-	    x.pack();
-	    x.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	    System.exit(0);
-	}
 	public PanelEspera() {
 		setLayout(new BorderLayout());
 		numConectados = 1;
